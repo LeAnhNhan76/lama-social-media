@@ -1,6 +1,7 @@
+import './rightBar.scss';
 const RightBar = () => {
   return (
-    <div>RightBar</div>
+    <div className="rightBar">RightBar</div>
   )
 }
 

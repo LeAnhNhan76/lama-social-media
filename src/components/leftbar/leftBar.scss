@@ -1,0 +1,45 @@
+@use '../../assets/styles/index.scss' as *;
+
+.leftBar {
+    flex: 2;
+    position: sticky;
+    top: 50px;
+    height: calc(100vh - 50px);
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .container {
+        padding: 20px;
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .user {
+                @include flex-center-vertical;
+                gap: 10px;
+                img {
+                    @include avatar-image;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+            .item {
+                @include flex-center-vertical;
+                gap: 10px;
+                img {
+                    width: 25px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+            hr {
+                @include divider;
+            }
+        }
+    }
+}

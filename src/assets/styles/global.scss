@@ -10,3 +10,17 @@ body {
     color: $black;
     font-family: 'Roboto', sans-serif;
 }
+
+html {
+    &::-webkit-scrollbar {
+        @include custom-scrollbar;
+    }
+
+    &::-webkit-scrollbar-track {
+        @include custom-scrollbar-track;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @include custom-scrollbar-thumb;
+    }
+}

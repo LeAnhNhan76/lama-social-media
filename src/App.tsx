@@ -14,9 +14,11 @@ function App() {
     return (
       <div className="layout">
         <Navbar></Navbar>
-        <div className="page-content">
+        <div className="page-content" style={{display: 'flex'}}>
           <LeftBar></LeftBar>
-          <Outlet></Outlet>
+          <div style={{flex: '5'}}>
+            <Outlet></Outlet>
+          </div>
           <RightBar></RightBar>
         </div>
       </div>
