@@ -1,7 +1,7 @@
 import { Navigate, Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import LeftBar from "./components/leftbar/LeftBar";
-import NavBar from "./components/navbar/NavBar";
-import RightBar from "./components/rightbar/RightBar";
+import LeftBar from "./components/leftBar/LeftBar";
+import Navbar from "./components/navbar/Navbar";
+import RightBar from "./components/rightBar/RightBar";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
@@ -13,7 +13,7 @@ function App() {
   const Layout = () => {
     return (
       <div className="layout">
-        <NavBar></NavBar>
+        <Navbar></Navbar>
         <div className="page-content">
           <LeftBar></LeftBar>
           <Outlet></Outlet>
