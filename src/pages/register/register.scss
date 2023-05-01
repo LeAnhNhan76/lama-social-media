@@ -1,6 +1,6 @@
 @use '../../assets/styles/index.scss' as *;
 
-.login {
+.register {
     height: 100vh;
     @include flex-center;
     background-color: $backgroundForm;
@@ -13,34 +13,6 @@
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         .left {
-            flex: 1;
-            background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"), center;
-            background-size: cover;
-            color: #fff;
-            @include flex-col;
-            gap: 30px;
-            padding: 50px;
-            h1 {
-                font-size: 100px;
-                line-height: 100px;
-            }
-            p {}
-            span {
-                font-size: 14px;
-            }
-            button {
-                background-color: #eee;
-                color: rebeccapurple;
-                width: 50%;
-                padding: 10px 0px;
-                cursor: pointer;
-                border: none;
-                border-radius: 2px;
-                font-weight: bold;
-                font-size: 12px;
-            }
-        }
-        .right {
             flex: 1;
             background-color: #fff;
             padding: 50px;
@@ -71,6 +43,34 @@
                     cursor: pointer;
                     font-size: 12px;
                 }
+            }
+        }
+        .right {
+            flex: 1;
+            background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"), center;
+            background-size: cover;
+            color: #fff;
+            @include flex-col;
+            gap: 30px;
+            padding: 50px;
+            h1 {
+                font-size: 100px;
+                line-height: 100px;
+            }
+            p {}
+            span {
+                font-size: 14px;
+            }
+            button {
+                background-color: #eee;
+                color: rebeccapurple;
+                width: 50%;
+                padding: 10px 0px;
+                cursor: pointer;
+                border: none;
+                border-radius: 2px;
+                font-weight: bold;
+                font-size: 12px;
             }
         }
     }
