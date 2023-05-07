@@ -1,3 +1,79 @@
+@use '../../assets/styles/index.scss' as *;
+
 .rightBar {
-    flex: 3;
+    flex: 2.5;
+    background-color: #eee;
+    position: sticky;
+    top: 50px;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container {
+        background-color: #eee;
+        .item {
+            margin: 10px;
+            background-color: #fff;
+            margin: 16px;
+            padding: 10px;
+            border-radius: 3px;
+            h5{
+                color: darkgray;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+            .item-row {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0px;
+                .left {
+                    @include flex-center-vertical;
+                    gap: 10px;
+                    font-size: 12px;
+                    position: relative;
+                    img {
+                        @include avatar-image;
+                    }
+                    p {
+                        color: gray;
+                    }
+                    span {
+                        font-weight: 600;
+                        color: #444;
+                    }
+                    .status {
+                        width: 7px;
+                        height: 7px;
+                        background-color: limegreen;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0px;
+                        left: 20px;
+                    }
+                }
+                .right {
+                    @include flex-center-vertical;
+                    gap: 5px;
+                    color: gray;
+                    font-size: 12px;
+                    button {
+                        padding: 5px;
+                        border: none;
+                        color: #fff;
+                        background-color: red;
+                        font-size: 12px;
+                    }
+
+                    button:first-child {
+                        background-color: blue;
+                    }
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
 }
