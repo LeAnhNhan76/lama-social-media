@@ -1,0 +1,67 @@
+.share-new {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    padding: 15px;
+    
+    .user-thoughts {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        img {
+            height: 30px;
+            width: 30px;
+            border: none;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        span {
+            color: gray;
+            font-size: 13px;
+        }
+    }
+
+    hr {
+        background-color: lightgray;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        .left {
+            display: flex;
+            gap: 20px;
+            
+
+            >.item {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 10px;
+                font-size: 12px;
+
+                img {
+                    width: 20px;
+                }
+                
+                span {
+                    color: gray
+                }
+            }
+        }
+        .right {
+            button {
+                color: white;
+                background-color: #5271ff;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}

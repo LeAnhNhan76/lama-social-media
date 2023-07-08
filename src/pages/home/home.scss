@@ -1,41 +1,9 @@
 @use '../../assets/styles/index.scss' as *;
 
 .home {
-    padding: 20px;
     @include flex-col;
     gap: 20px;
     background-color: #eee;
-    overflow: auto;
-    max-width: 800px;
-    
-    .stories {
-        display: flex;
-        gap: 4px;
-        overflow-x: scroll;
-        border-radius: 3px;
-        transition: all 0.25s ease;
-        .story-card:first-child {
-            .add-btn {
-                display: block !important;
-            }
-        }
-
-        &::-webkit-scrollbar {
-            width: 7px;
-            height: 7px;
-        }
-        &::-webkit-scrollbar-track {
-            background-color: white;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: gray;
-            border-radius: 10px;
-        }
-    }
-
-    .sharing {}
-
-    .posts {
-
-    }
+    padding: 10px 47px;
+    padding-right: 57px;
 }

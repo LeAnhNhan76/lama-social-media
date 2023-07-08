@@ -24,3 +24,7 @@ html {
         @include custom-scrollbar-thumb;
     }
 }
+
+hr.divider {
+    @include divider;
+}

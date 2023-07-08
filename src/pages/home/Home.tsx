@@ -1,30 +1,14 @@
-import StoryCard from '../../components/storyCard/storyCard';
+import Posts from '../../components/posts/Posts';
+import ShareNew from '../../components/shareNew/ShareNew';
+import Stories from '../../components/stories/Stories';
 import './home.scss';
 
 const Home = () => {
   return (
     <div className='home'>
-      <div className="stories">
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-          <StoryCard></StoryCard>
-      </div>
-      <div className="sharing">
-        Sharing
-      </div>
-      <div className="posts">
-        Posts
-      </div>
+      <Stories></Stories>
+      <ShareNew></ShareNew>
+      <Posts></Posts>
     </div>
   )
 }
